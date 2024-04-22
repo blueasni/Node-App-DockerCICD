@@ -21,7 +21,7 @@ pipeline {
         
         stage('Push'){
             steps{
-        	     sh "sudo docker login -u blueasni -p $#ABCDabcd0911$#"
+        	     sh "sudo docker login -u blueasni -p #@ABCDabcd0911#@"
                  sh 'sudo docker push blueasni/nodo-todo:latest'
             }
         }  
