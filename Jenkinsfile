@@ -35,13 +35,18 @@ pipeline {
         sh 'npm run test'
       }
     }
+        stage('Deploy) {
+      steps {
+        sh 'npm run test'
+      }
+    }
   }
-  post {
+ /* post {
     failure {
       echo 'Processing failed'
     }
     success {
       echo 'Processing succeeded'
     }
-  }
+  }*/
 }
