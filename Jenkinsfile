@@ -12,19 +12,19 @@ pipeline {
             steps{
             	        dir('Backend') {
                     		sh 'npm install'
-				sh 'npm build'
+				sh 'npm run build'
                		}
                         dir('bookmaker') {
                                 sh 'npm install'
-                                sh 'npm build'
+                                sh 'npm run build'
                         }
                         dir('officer') {
                                 sh 'npm install'
-                                sh 'npm build'
+                                sh 'npm run build'
                         }
-                        dir('officer') {
+                        dir('LandingPage') {
                                 sh 'npm install'
-                                sh 'npm build'
+                                sh 'npm run build'
                         }
                 sh 'sudo docker build . -t blueasni/nodo-todo:latest'
             }
