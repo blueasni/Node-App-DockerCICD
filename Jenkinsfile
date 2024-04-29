@@ -10,7 +10,7 @@ pipeline {
         stage('Build'){
         
             steps{
-        		dir('Backend') {
+            	        dir('Backend') {
                     		sh 'npm install'
 				sh 'npm build'
                		}
@@ -22,9 +22,6 @@ pipeline {
                                 sh 'npm install'
                                 sh 'npm build'
                         }
-            }
-            steps{
-            	
                 sh 'sudo docker build . -t blueasni/nodo-todo:latest'
             }
         }
