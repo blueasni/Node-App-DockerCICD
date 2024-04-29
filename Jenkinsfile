@@ -8,7 +8,23 @@ pipeline {
             }
         }
         stage('Build'){
+        
             steps{
+        		dir('Backend') {
+                    		sh 'npm install'
+				sh 'npm build'
+               		}
+                        dir('bookmaker') {
+                                sh 'npm install'
+                                sh 'npm build'
+                        }
+                        dir('officer') {
+                                sh 'npm install'
+                                sh 'npm build'
+                        }
+            }
+            steps{
+            	
                 sh 'sudo docker build . -t blueasni/nodo-todo:latest'
             }
         }
