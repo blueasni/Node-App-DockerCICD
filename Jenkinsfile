@@ -26,7 +26,7 @@ pipeline {
                                 sh 'npm install'
                                 sh 'npm run build'
                         }*/
-                sh 'cd LandingPage && npm install && npm run build'
+                sh 'cd LandingPage && npm install --force && npm run build'
                 sh 'sudo docker build . -t blueasni/nodo-todo:latest'
             }
         }
