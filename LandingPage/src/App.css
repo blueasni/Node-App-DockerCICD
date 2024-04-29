@@ -1,0 +1,439 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* /for the STEPPS */
+/* services.css */
+.step-row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.step-circle {
+  border: 2px solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.step-circle h4 {
+  margin-top: 10px;
+  color: #333; /* Adjust color as needed */
+}
+
+.step-circle p {
+  color: #666; /* Adjust color as needed */
+}
+
+/* CSS for the icons - you will have to include your own icon font or use inline SVGs */
+.icon-user-plus:before {
+  content: "\f234"; /* FontAwesome icon code for user-plus */
+}
+
+.icon-file-text:before {
+  content: "\f15c"; /* FontAwesome icon code for file-text */
+}
+
+.icon-check-circle:before {
+  content: "\f058"; /* FontAwesome icon code for check-circle */
+}
+
+.step-arrow::after {
+  content: '→';
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  font-size: 24px;
+  color: #7a44ff;
+  transform: translateY(-50%);
+}
+
+.step-arrow::before {
+  content: '→';
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  font-size: 24px;
+  color: #61fb85;
+  transform: translateY(-50%);
+}
+
+/* Ensure the first and last circle don't have arrows */
+.step-row .col-lg-4:first-child .step-arrow::before,
+.step-row .col-lg-4:last-child .step-arrow::after {
+  content: none;
+}
+.section1 {
+  /* background-color: #e5fafe; Fallback color */
+  /* background-image: url('./assets/images/features/wave.svg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  }
+  
+
+  /* FAQS Section */
+  .faq-section {
+    margin-top: 0em;
+    background-color: #fff; /* White background for the section */
+    color: #333; /* Dark text for contrast */
+    font-family: 'Arial', sans-serif; /* Replace with your font of choice */
+    padding: 8em;
+  }
+  
+  .faq-header {
+    font-size: 2.5em; /* Large text size for 'Frequently' */
+    color: #333; /* Dark color for the text */
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  
+  .faq-header-questions {
+    display: block; /* Place 'asked' on a new line */
+    font-size: 0.6em; /* Smaller text size for 'asked' */
+    letter-spacing: 0.1em; /* Space out the letters */
+    color: #333; /* Dark color for the text */
+    opacity: 0.7; /* Slightly transparent for the erased effect */
+  }
+  
+  .faq-header-questions-purple {
+    color: #7a44ff; /* Purple color for 'questions' */
+    font-size: 0.6em; /* Match text size with 'asked' */
+    letter-spacing: 0.1em; /* Space out the letters */
+    opacity: 0.7; /* Slightly transparent for the erased effect */
+  }
+  
+  .faq-item {
+    margin-bottom: 1em;
+    background: #f9f9f9; /* Slightly off-white background for items */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  }
+  
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    font-size: 1.2em;
+    border: none;
+    background: #f0f0f0; /* Slightly grey background for contrast */
+    color: #333; /* Dark color for the text */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .faq-question:hover,
+  .faq-question.active {
+    background: #e0e0e0; /* Light grey background on hover/active */
+  }
+  
+  .faq-icon {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em; /* Large icon size */
+    color: #7a44ff; /* Purple color for the icon */
+    transition: transform 0.3s;
+  }
+  
+  .faq-question.active .faq-icon {
+    transform: translateY(-50%) rotate(-180deg); /* Rotate icon for active items */
+  }
+  
+  .faq-answer {
+    display: none; /* Hidden by default */
+    padding: 1em;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666; /* Dark grey color for the text */
+    background: #f9f9f9; /* Slightly off-white background for answers */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .faq-question.active + .faq-answer {
+    display: block; /* Show when the question is active */
+  }
+
+  .guidelines {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #002855;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-button.active {
+    border-bottom: 3px solid #002855;
+  }
+  
+  .tab-content {
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .content-section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .content-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  * Additional styles for How to Apply section */
+  .how-to-apply h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .how-to-apply p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .how-to-apply ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .how-to-apply ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .how-to-apply ol li a {
+    color: #002855; /* Navy blue color for links */
+    text-decoration: underline; /* Underline links for better visibility */
+  }
+  /* Document grid layout styles */
+.content-section .document-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap as needed */
+  margin-top: 20px;
+}
+
+.content-section .document-column {
+  flex: 1; /* Each column takes equal width */
+  max-width: calc(50% - 10px); /* Adjust the width for two columns, accounting for the gap */
+}
+
+.content-section .document-item {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.content-section .document-item h4 {
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+.content-section .document-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-section .document-item ul li {
+  color: #002855;
+  padding: 5px 0; /* Add padding for each list item */
+  border-bottom: 1px solid #eee; /* Optional: add a separator line */
+}
+
+.content-section .document-item ul li:last-child {
+  border-bottom: none; /* Remove bottom border for the last item */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-section .document-grid {
+    flex-direction: column;
+  }
+  .content-section .document-column {
+    max-width: 100%; /* Each column takes full width on smaller screens */
+  }
+}
+/* Previous styles... */
+
+/* Styles for the document cards */
+.content-section .document-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align the cards at the top */
+}
+
+.content-section .document-card {
+  width: calc(33.333% - 20px); /* Allocate width for 3 cards per row, subtracting the gap */
+  margin-right: 10px; /* Space between cards */
+}
+
+.content-section .document-card:last-child {
+  margin-bottom: 0; /* Remove margin for the last card */
+}
+
+.content-section .document-card-body {
+  padding: 20px;
+  text-align: center; /* Center the text inside the card */
+}
+
+.content-section .document-card h4 {
+  margin-bottom: 10px;
+  color: #002855; /* Navy blue color for the card title */
+  font-size: 18px;
+}
+
+.content-section .document-card p {
+  color: #002855; /* Navy blue color for the card text */
+  font-size: 16px;
+}
+
+.document-card {
+  flex: 1;
+  margin: 0 5px;
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.document-card img {
+  width: 80%;
+  height: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.document-card h4 {
+  margin-bottom: 10px;
+  color: #002855;
+  font-size: 18px;
+}
+
+.document-card p {
+  color: #002855;
+  font-size: 16px;
+}
+.content-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-section h3 {
+  color: #002855;
+  margin-bottom: 15px;
+}
+
+.application-steps .step {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.application-steps .step:last-child {
+  border-bottom: none;
+}
+
+.application-steps h4 {
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+.application-steps p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 15px;
+    margin: 15px 0;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .document-card {
+    width: 80%;
+    margin: 10px 0;
+  }
+}

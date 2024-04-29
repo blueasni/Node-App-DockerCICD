@@ -1,0 +1,38 @@
+{
+  "faqData": {
+    "delivery": {
+      "id": "0",
+      "subtitle": "",
+      "qandA": [
+        {
+          "id": "1",
+          "question": "How do I sign up for EGMS?",
+          "answer": "For large products, we deliver your product via a third party logistics company offering you the “room of choice” scheduled delivery service. For small products, we offer free parcel delivery."
+        },
+        {
+          "id": "2",
+          "question": "What Documents Do I need to Provide for Registration",
+          "answer": "PreciseAG uses computer vision and machine learning to provide instant biosecurity insights for poultry farmers without cost to them or disruption to or added complexity in their operations. There are no other products on the market like it. And that is just our launch version. This application has the potential to improve the food supply for all people in the UAE, MENA and the world.DocNovus is a powerful Natural Language Processing (NLP) application that can provide deep contextual analysis for a variety of use cases such as help desk ticket analysis, technical documentation, client interview analysis, legal research, sales script analysis, research & education, etc. There are no other products available on the market that have the same robust feature-set as DocNovus. It lets you engage with your documents as if they were a living person. The cost savings and qualitative benefits to organizations are massive. It can make businesses more efficient, legal systems more just, and education more effective"
+        },
+        {
+          "id": "3",
+          "question": "How long will it take for my Application get Approved",
+          "answer": "We will promptly replace any product that is damaged in transit. Just contact our support team, to notify us of the situation within 48 hours of product arrival."
+        },
+        {
+          "id": "4",
+          "question": "How long will it take for my Application get Approved",
+          "answer": "We will promptly replace any product that is damaged in transit. Just contact our support team, to notify us of the situation within 48 hours of product arrival."
+        },
+        {
+          "id": "5",
+          "question": "How long will it take for my Application get Approved",
+          "answer": "PreciseAG uses computer vision and machine learning to provide instant biosecurity insights for poultry farmers without cost to them or disruption to or added complexity in their operations. There are no other products on the market like it. And that is just our launch version. This application has the potential to improve the food supply for all people in the UAE, MENA and the world.DocNovus is a powerful Natural Language Processing (NLP) application that can provide deep contextual analysis for a variety of use cases such as help desk ticket analysis, technical documentation, client interview analysis, legal research, sales script analysis, research & education, etc. There are no other products available on the market that have the same robust feature-set as DocNovus. It lets you engage with your documents as if they were a living person. The cost savings and qualitative benefits to organizations are massive. It can make businesses more efficient, legal systems more just, and education more effective"
+        }
+      ]
+    }
+  }
+}
+   
+  
+

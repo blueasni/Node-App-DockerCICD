@@ -1,0 +1,25 @@
+# path/to/project/root/.eslintignore
+# /node_modules/* and /bower_components/* in the project root are ignored by default
+build/*.js
+src/views/*.js
+src/views/components/*.js
+src/pages/*.js
+src/pages/forms/*.js
+src/pages/forms/renewal/*.js
+src/pages/forms/my-branch/*.js
+src/pages/download/license/*.js
+src/pages/login/*.js
+src/navigation/vertical/*.js
+src/@core/layouts/*.js
+src/@fake-db/pages/*.js
+src/context/*.js
+src/layouts/*.js
+bower_components/foo/*.js
+src/@core/layouts/components/shared-components/*.js
+src/@core/layouts/components/vertical/navigation/*.js
+src/@core/theme/overrides/*.js
+src/pages/components/accordion/*.js
+src/views/download/license/*.js
+# Ignore built files except build/index.js
+# build/*
+#!build/index.js

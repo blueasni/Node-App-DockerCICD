@@ -22,6 +22,10 @@ pipeline {
                                 sh 'npm install'
                                 sh 'npm build'
                         }
+                        dir('officer') {
+                                sh 'npm install'
+                                sh 'npm build'
+                        }
                 sh 'sudo docker build . -t blueasni/nodo-todo:latest'
             }
         }
