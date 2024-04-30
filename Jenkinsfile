@@ -27,6 +27,8 @@ pipeline {
                                 sh 'npm run build'
                         }*/
                 sh 'cd home && npm install --force && npm run build'
+                sh 'rm -rf *.tar.gz'
+                sh 'tar czf build-$BUILD_NUMBER.tar.gz build'
                 sh 'sudo docker build . -t blueasni/nodo-todo:latest'
             }
         }
