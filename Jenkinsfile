@@ -56,6 +56,7 @@ pipeline {
                 sudo docker stop nodo-todo || true
                 sudo docker rm nodo-todo || true 
                 sudo docker run -d --name nodo-todo blueasni/nodo-todo:latest
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'telecloud', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/var/www/html/', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'build/')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])
                 '''
             }
         }
